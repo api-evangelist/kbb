@@ -1,0 +1,54 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.kbb.com/",
+  "name": "Kelley Blue Book",
+  "url": "https://www.kbb.com/",
+  "logo": "https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg",
+  "description": "Kelley Blue Book (KBB) is the vehicle valuation and automotive information platform trusted by consumers, dealers, lenders, and OEMs since 1926. KBB provides REST APIs for new and used car values, pricing data, vehicle specifications, expert and consumer ratings, cost-of-ownership projections, fuel cost calculations, and dealer trade-in tools.",
+  "sameAs": [
+    "https://x.com/KelleyBlueBook",
+    "https://www.linkedin.com/company/kelley-blue-book",
+    "https://github.com/enovaauto/kbb"
+  ],
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Cox Automotive",
+    "url": "https://www.coxautoinc.com/"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "KBB API Products",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "InfoDriver Web Service (IDWS) 4.0",
+        "description": "RESTful API providing access to Kelley Blue Book vehicle data, values, and content. Endpoints cover vehicle information, new and used pricing, expert and consumer ratings and reviews, cost-of-ownership projections, fuel cost calculations, and vehicle specifications.",
+        "url": "https://developer.kbb.com/",
+        "category": "B2B API"
+      },
+      {
+        "@type": "Offer",
+        "name": "Batch VIN Service",
+        "description": "High-volume vehicle identification number processing service for enriching large vehicle inventories with KBB data and valuations.",
+        "url": "https://developer.kbb.com/",
+        "category": "B2B API"
+      }
+    ]
+  },
+  "knowsAbout": [
+    "Vehicle Valuation",
+    "Car Pricing",
+    "Trade-In",
+    "Vehicle Data",
+    "Dealer Tools",
+    "VIN Processing",
+    "Cost of Ownership",
+    "Fuel Cost Calculations"
+  ],
+  "developer": {
+    "@type": "WebSite",
+    "name": "KBB Developer Portal",
+    "url": "https://developer.kbb.com/"
+  }
+}
