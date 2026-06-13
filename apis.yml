@@ -1,0 +1,90 @@
+aid: kbb
+name: Kelley Blue Book
+description: >
+  Kelley Blue Book (KBB) is the vehicle valuation and automotive information
+  platform trusted by consumers, dealers, lenders, and OEMs since 1926.
+  KBB provides REST APIs for new and used car values, pricing data, vehicle
+  specifications, expert and consumer ratings, cost-of-ownership projections,
+  fuel cost calculations, and dealer trade-in tools. The InfoDriver Web
+  Service (IDWS) 4.0 delivers JSON over HTTPS authenticated via API key,
+  and is licensed to B2B partners including automotive dealers, lenders,
+  fleet operators, and industry data consumers. Values are updated twice
+  monthly to reflect current market conditions.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/kbb/refs/heads/main/apis.yml
+created: 2026-06-13
+modified: 2026-06-13
+specificationVersion: "0.19"
+tags:
+  - Automotive
+  - Vehicle Valuation
+  - Car Pricing
+  - Trade-In
+  - Vehicle Data
+  - Dealer Tools
+apis:
+  - aid: kbb:idws
+    name: InfoDriver Web Service (IDWS) 4.0
+    description: >
+      RESTful API providing access to Kelley Blue Book vehicle data, values,
+      and content. Endpoints cover vehicle information, new and used pricing,
+      expert and consumer ratings and reviews, cost-of-ownership projections,
+      fuel cost calculations, and vehicle specifications. Access is via
+      api_key query string parameter under a B2B licensing agreement.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.kbb.com/
+    baseURL: https://sandbox.api.kbb.com/ads
+    tags:
+      - Vehicle Data
+      - Car Pricing
+      - Vehicle Valuation
+      - Ratings
+      - Reviews
+    properties:
+      - type: Documentation
+        url: https://developer.kbb.com/
+      - type: Authentication
+        url: https://developer.kbb.com/access
+  - aid: kbb:batch-vin
+    name: Batch VIN Service
+    description: >
+      High-volume vehicle identification number processing service for
+      enriching large vehicle inventories with KBB data and valuations.
+      Suited for lenders, fleet operators, and auction platforms.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://developer.kbb.com/
+    baseURL: https://developer.kbb.com/
+    tags:
+      - VIN
+      - Batch Processing
+      - Vehicle Inventory
+    properties:
+      - type: Documentation
+        url: https://developer.kbb.com/
+common:
+  - type: Website
+    url: https://www.kbb.com/
+  - type: Documentation
+    url: https://developer.kbb.com/
+  - type: GitHubOrg
+    url: https://github.com/enovaauto/kbb
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/kelley-blue-book
+  - type: Blog
+    url: https://b2b.kbb.com/resources/
+  - type: Pricing
+    url: https://b2b.kbb.com/contact/
+  - type: StatusPage
+    url: https://www.isitdownrightnow.com/kbb.com.html
+  - type: X
+    url: https://x.com/KelleyBlueBook
+  - type: Plans
+    url: plans/kbb-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/kbb-rate-limits.yml
+  - type: FinOps
+    url: finops/kbb-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

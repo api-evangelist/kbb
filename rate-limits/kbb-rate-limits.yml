@@ -1,0 +1,63 @@
+name: Kelley Blue Book API Rate Limits
+description: >
+  Kelley Blue Book does not publish specific rate limit thresholds in its
+  public developer documentation. Rate limits, quotas, and throughput
+  allowances are defined within each customer's B2B licensing agreement.
+  The notes below reflect known technical behaviors documented in public
+  API guides and community references.
+limits:
+  - name: Authentication
+    description: >
+      All API requests require an api_key query string parameter.
+      Requests with an invalid or revoked key receive a 401 Unauthorized
+      response. Keys are provisioned by KBB during the B2B onboarding process.
+    type: api-key
+    enforcement: per-request
+  - name: Request Quotas
+    description: >
+      Per-license request quotas are negotiated as part of the B2B contract.
+      No publicly documented free or trial tier exists with defined call limits.
+    type: contractual
+    enforcement: per-license
+  - name: Data Version Freshness
+    description: >
+      KBB values are updated twice per month to reflect current market
+      conditions. Responses include a dataVersion metadata field with a
+      version ID and effective date range.
+    type: data-refresh
+    cadence: twice-monthly
+  - name: GZIP Compression
+    description: >
+      Clients may send Accept-Encoding: gzip to receive compressed responses,
+      reducing bandwidth on high-volume integrations.
+    type: optimization
+    header: Accept-Encoding
+    value: gzip
+  - name: CORS
+    description: >
+      CORS is enabled on the IDWS 4.0 API endpoints, supporting
+      browser-based cross-domain requests.
+    type: cors
+    supported: true
+technical:
+  base_host: sandbox.api.kbb.com
+  base_path: /ads
+  schemes:
+    - https
+  content_type: application/json
+  versioning:
+    - type: url-path
+      example: /v1/resource?queryParameters
+    - type: accept-header
+      example: "Accept: application/json; version=1"
+  error_codes:
+    - code: 401
+      meaning: Invalid or revoked API key
+    - code: 4xx
+      meaning: Client-side errors (bad parameters, missing required fields)
+    - code: 5xx
+      meaning: Server-side errors
+notes: >
+  Specific numeric rate limits (requests per second, per day, etc.) are
+  not publicly disclosed. Contact b2b.kbb.com/contact/ for quota details
+  associated with a specific licensing tier.

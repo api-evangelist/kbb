@@ -1,0 +1,58 @@
+name: Kelley Blue Book API Plans and Pricing
+description: >
+  Kelley Blue Book API access is available through B2B licensing agreements.
+  KBB does not publish public self-serve pricing tiers — access is granted
+  via direct engagement with their B2B sales team. Licensing options are
+  structured around dealer, OEM, and industry/partner use cases with data
+  rights scoped to the license purchased.
+contact: https://b2b.kbb.com/contact/
+plans:
+  - name: InfoDriver Web Services (IDWS)
+    description: >
+      RESTful access to Kelley Blue Book vehicle data, values, and content.
+      Covers vehicle information, pricing (new and used), expert and consumer
+      ratings, reviews, cost-of-ownership projections, fuel cost calculations,
+      and vehicle specifications. Available under a licensed B2B agreement;
+      scope of data returned depends on the license purchased.
+    type: commercial
+    access: by-request
+    url: https://developer.kbb.com/
+    features:
+      - Vehicle data and specifications
+      - New and used car pricing (Blue Book Values)
+      - Expert and consumer ratings and reviews
+      - Cost-of-ownership (5-year projections)
+      - Fuel cost calculations
+      - Batch VIN processing
+  - name: Batch VIN
+    description: >
+      Bulk vehicle identification number processing service for enriching
+      large vehicle inventories with KBB data and valuations. Suited for
+      lenders, fleet operators, and auction platforms requiring high-volume
+      lookups.
+    type: commercial
+    access: by-request
+    url: https://developer.kbb.com/
+    features:
+      - Bulk VIN decoding
+      - Mass vehicle valuation
+      - Inventory enrichment
+  - name: Price Advisor / Quick Values
+    description: >
+      Embeddable valuation widgets and lightweight API calls for dealerships
+      and third-party platforms needing real-time KBB Price Advisor and
+      Trade-In Values integrated into inventory management systems, loan
+      origination platforms, or consumer-facing websites.
+    type: commercial
+    access: by-request
+    url: https://b2b.kbb.com/contact/
+    features:
+      - KBB Price Advisor integration
+      - Trade-In Value lookups
+      - Loan origination support
+      - Dealer website embedding
+notes: >
+  All pricing and plan details are negotiated directly with Kelley Blue Book's
+  B2B team. There are no publicly listed price points or free tiers for the
+  official KBB API. Third-party resellers (e.g., VinAudit) offer indirect
+  access with their own pricing structures.

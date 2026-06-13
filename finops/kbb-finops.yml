@@ -1,0 +1,51 @@
+name: Kelley Blue Book API FinOps
+description: >
+  Financial operations considerations for teams integrating Kelley Blue Book
+  APIs. KBB API access is exclusively through negotiated B2B licensing — there
+  are no public self-serve pricing pages or metered pay-per-call tiers.
+  Cost management strategies below apply to contractual B2B engagements.
+model: contractual-license
+pricing_transparency: low
+public_pricing: false
+contact_for_pricing: https://b2b.kbb.com/contact/
+cost_drivers:
+  - name: Data Scope
+    description: >
+      Licensing fees vary by the breadth of data rights purchased. Pricing,
+      ratings, reviews, cost-of-ownership, and batch VIN each represent
+      additional data modules that may affect contract cost.
+  - name: Request Volume
+    description: >
+      High-volume integrations (inventory management systems, loan origination
+      platforms, auction houses) will carry higher contract costs than
+      low-volume dealer website embeds.
+  - name: Use Case
+    description: >
+      Dealer, OEM, lender, and industry/partner use cases are priced
+      differently. Resale or redistribution of KBB data to third parties
+      typically requires a separate licensing tier.
+  - name: Data Freshness
+    description: >
+      KBB values are updated twice monthly. Contracts that require real-time
+      or near-real-time value lookups versus batch/periodic refreshes may
+      have different cost structures.
+optimization:
+  - tip: Cache vehicle data locally where license permits to reduce API call volume.
+  - tip: Use GZIP compression (Accept-Encoding gzip) to lower bandwidth costs.
+  - tip: Leverage Batch VIN for bulk inventory work rather than individual VIN calls.
+  - tip: Negotiate data module scope carefully — only license the data categories you will actually surface to end users.
+  - tip: Monitor the dataVersion field to avoid unnecessary re-fetches when data has not changed since the last refresh cycle.
+alternatives:
+  - name: VinAudit
+    description: Third-party reseller offering indirect KBB data access with published pay-per-call pricing.
+    url: https://www.vinaudit.com/kelley-blue-book-api
+  - name: Apify KBB Scraper
+    description: Unofficial web scraping actor for KBB listings data; not sanctioned by KBB.
+    url: https://apify.com/lulzasaur/kbb-scraper/api
+notes: >
+  Because KBB API pricing is not public, teams should budget conservatively
+  during vendor evaluation and request a detailed quote from
+  https://b2b.kbb.com/contact/ before committing to integration effort.
+  Cox Automotive (KBB's parent) may bundle KBB API access with other
+  Cox Automotive data products (Manheim, Autotrader, Dealertrack),
+  which can affect total cost of ownership.
