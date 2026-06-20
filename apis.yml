@@ -11,7 +11,7 @@ description: >
   fleet operators, and industry data consumers. Values are updated twice
   monthly to reflect current market conditions.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/kbb/refs/heads/main/apis.yml
 created: 2026-06-13
 modified: 2026-06-13
@@ -32,7 +32,7 @@ apis:
       expert and consumer ratings and reviews, cost-of-ownership projections,
       fuel cost calculations, and vehicle specifications. Access is via
       api_key query string parameter under a B2B licensing agreement.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.kbb.com/
     baseURL: https://sandbox.api.kbb.com/ads
     tags:
@@ -52,7 +52,7 @@ apis:
       High-volume vehicle identification number processing service for
       enriching large vehicle inventories with KBB data and valuations.
       Suited for lenders, fleet operators, and auction platforms.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://developer.kbb.com/
     baseURL: https://developer.kbb.com/
     tags:

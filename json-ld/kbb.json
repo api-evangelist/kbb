@@ -4,7 +4,7 @@
   "@id": "https://www.kbb.com/",
   "name": "Kelley Blue Book",
   "url": "https://www.kbb.com/",
-  "logo": "https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg",
+  "logo": "https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg",
   "description": "Kelley Blue Book (KBB) is the vehicle valuation and automotive information platform trusted by consumers, dealers, lenders, and OEMs since 1926. KBB provides REST APIs for new and used car values, pricing data, vehicle specifications, expert and consumer ratings, cost-of-ownership projections, fuel cost calculations, and dealer trade-in tools.",
   "sameAs": [
     "https://x.com/KelleyBlueBook",
