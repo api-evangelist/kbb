@@ -3,18 +3,22 @@
   "name": "Kelley Blue Book",
   "blogUrl": "https://b2b.kbb.com/resources/",
   "description": "KBB B2B resources hub covering industry insights, inventory and trade-in, fixed operations, and marketing and advertising topics for automotive dealers, lenders, and OEMs.",
-  "lastFetched": "2026-06-13",
+  "lastFetched": "2026-06-21",
   "posts": [],
   "repo": "kbb",
   "feeds": [
     {
-      "source": "https://www.linkedin.com/company/kelley-blue-book",
-      "feed_url": "https://www.linkedin.com/company/kelley-blue-book",
+      "source": "https://b2b.kbb.com/resources/feed/",
+      "feed_url": "https://b2b.kbb.com/resources/feed/",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "feed"
+    },
+    {
+      "source": "https://www.linkedin.com/company/kelley-blue-book",
+      "error": "HTTPError"
     }
   ],
   "post_count": 0,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T12:03:07Z"
 }
