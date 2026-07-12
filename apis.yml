@@ -63,6 +63,8 @@ apis:
       - type: Documentation
         url: https://developer.kbb.com/
 common:
+  - type: DomainSecurity
+    url: security/kbb-domain-security.yml
   - type: Website
     url: https://www.kbb.com/
   - type: Documentation
