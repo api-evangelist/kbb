@@ -16,9 +16,12 @@
     },
     {
       "source": "https://www.linkedin.com/company/kelley-blue-book",
-      "error": "HTTPError"
+      "feed_url": "https://www.linkedin.com/company/kelley-blue-book",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
-  "post_count": 10,
-  "fetched": "2026-07-11T11:50:51Z"
+  "post_count": 11,
+  "fetched": "2026-08-01T15:49:00Z"
 }
