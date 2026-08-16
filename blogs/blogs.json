@@ -11,7 +11,7 @@
       "source": "https://b2b.kbb.com/resources/feed/",
       "feed_url": "https://b2b.kbb.com/resources/feed/",
       "title": "",
-      "saved": 0,
+      "saved": 1,
       "method": "feed"
     },
     {
@@ -19,9 +19,10 @@
       "feed_url": "https://www.linkedin.com/company/kelley-blue-book",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "none",
+      "error": "parse_failed"
     }
   ],
-  "post_count": 11,
-  "fetched": "2026-08-06T14:08:46Z"
+  "post_count": 12,
+  "fetched": "2026-08-15T12:11:08Z"
 }
