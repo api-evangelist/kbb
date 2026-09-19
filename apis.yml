@@ -79,6 +79,8 @@ apis:
   humanURL: http://developer.kbb.com/#!/data/1-Default
   baseURL: http://developer.kbb.com/#!/data/1-Default
   tags:
+  - Vehicles
+  tags_raw:
   - Vehicle
   properties:
   - type: Documentation
