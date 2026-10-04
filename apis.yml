@@ -32,6 +32,10 @@ url: https://raw.githubusercontent.com/api-evangelist/kbb/refs/heads/main/apis.y
 created: 2026-06-13
 modified: 2026-06-13
 specificationVersion: '0.23'
+x-docs-platform: swagger-ui
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-10-03
+x-docs-hosting: aws-cloudfront
 tags:
 - Automotive
 - Vehicle Valuation
