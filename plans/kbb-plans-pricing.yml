@@ -60,3 +60,27 @@ notes: >
   B2B team. There are no publicly listed price points or free tiers for the
   official KBB API. Third-party resellers (e.g., VinAudit) offer indirect
   access with their own pricing structures.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models: []
+  units: []
+  plans:
+  - name: InfoDriver Web Services (IDWS)
+    access: paid
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Batch VIN
+    access: paid
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
+  - name: Price Advisor / Quick Values
+    access: paid
+    model: unstated
+    model_how: derived
+    units: []
+    periods: []
