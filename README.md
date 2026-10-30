@@ -1,4 +1,4 @@
-# Kelley Blue Book (KBB) — APIs.json Profile
+# Kelley Blue Book
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,32 +64,107 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Vehicle valuation and automotive information platform with REST APIs for new and used car values, pricing data, vehicle specifications, and dealer trade-in tools.
+Kelley Blue Book (KBB) is the vehicle valuation and automotive information platform trusted by consumers, dealers, lenders, and OEMs since 1926. KBB provides REST APIs for new and used car values, pricing data, vehicle specifications, expert and consumer ratings, cost-of-ownership projections, fuel cost calculations, and dealer trade-in tools. The InfoDriver Web Service (IDWS) 4.0 delivers JSON over HTTPS authenticated via API key, and is licensed to B2B partners including automotive dealers, lenders, fleet operators, and industry data consumers. Values are updated twice monthly to reflect current market conditions.
 
-**Website:** https://www.kbb.com/  
-**Developer Portal:** https://developer.kbb.com/  
-**B2B Contact:** https://b2b.kbb.com/contact/  
+**Areas:** Automotive · Vehicle Valuation · Car Pricing · Trade-In · Vehicle Data · Dealer Tools
 
-## APIs
+## Kelley Blue Book on APIs.io
 
-| API | Description |
-|-----|-------------|
-| InfoDriver Web Service (IDWS) 4.0 | RESTful API for vehicle data, pricing, ratings, reviews, cost-of-ownership, fuel cost, and specs |
-| Batch VIN Service | High-volume VIN processing for inventory enrichment and bulk valuations |
+Everything profiled for Kelley Blue Book is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/kbb/](https://apis.io/providers/kbb/)** — or go straight to one of the APIs or properties below.
 
-## Authentication
+### APIs (3)
 
-All API requests use an `api_key` query string parameter. Keys are provisioned through B2B licensing agreements.
+- [InfoDriver Web Service (IDWS) 4.0](https://apis.io/apis/kbb/idws/) — RESTful API providing access to Kelley Blue Book vehicle data, values, and content. Endpoints cover vehicle information, new and used pricing, expert and…
+- [Batch VIN Service](https://apis.io/apis/kbb/batch-vin/) — High-volume vehicle identification number processing service for enriching large vehicle inventories with KBB data and valuations. Suited for lenders, fleet…
+- [Kelley Blue Book](https://apis.io/apis/kbb/kelley-blue-book/) — Vehicle info, pricing, configuration, plus much more
 
-## Files
+### Published properties
 
-| File | Description |
-|------|-------------|
-| `apis.yml` | APIs.json 0.19 provider profile |
-| `plans/kbb-plans-pricing.yml` | API plans and pricing overview |
-| `rate-limits/kbb-rate-limits.yml` | Rate limit and technical details |
-| `finops/kbb-finops.yml` | FinOps considerations for API consumers |
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
----
+#### Security (1)
 
-Maintained by [Kin Lane](mailto:kin@apievangelist.com) — [api-evangelist](https://github.com/api-evangelist)
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Kbb Domain Security](https://apis.io/security/kbb/kbb-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Kbb Plans Pricing](https://apis.io/plans/kbb/kbb-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Kbb Rate Limits](https://apis.io/rate-limits/kbb/kbb-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Kbb Finops](https://apis.io/finops/kbb/kbb-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.kbb.com/)
+- [Documentation](https://developer.kbb.com/)
+- [Pricing](https://b2b.kbb.com/contact/)
+- [Blog](https://b2b.kbb.com/resources/)
+- [Status](https://www.isitdownrightnow.com/kbb.com.html)
+
+## API Evangelist rating
+
+**Kin Score 14.6** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 28.9 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 18.4 |
+
+**Agent readiness 3.1** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/kbb/](https://apis.io/providers/kbb/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Kelley Blue Book: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/kbb/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
